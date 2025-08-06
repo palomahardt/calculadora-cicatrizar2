@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Precificação - Cicatrizar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Calculadora de Preço por Serviço</h1>
+        <p>Defina o valor dos seus serviços da Cicatrizar com base nos custos e na frequência do tratamento.</p>
+
+        <div class="custos-fixos">
+            <div>
+                <label for="custo-hora-geral">Valor da Hora (R$):</label>
+                <input type="number" id="custo-hora-geral" value="50" min="0">
+            </div>
+            <div>
+                <label for="lucro-desejado">Margem de Lucro (%):</label>
+                <input type="number" id="lucro-desejado" value="20" min="0">
+            </div>
+        </div>
+
+        <div class="area-servico" data-servico="diabeticos">
+            <h3>Cuidados com Pé Diabético</h3>
+            <div class="servico-info">
+                <label for="duracao-diabeticos">Duração da Visita (minutos):</label>
+                <input type="number" id="duracao-diabeticos" value="60" min="15">
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Descrição</th>
+                        <th>Custo Unitário (R$)</th>
+                        <th>Quantidade</th>
+                        <th>Total</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody class="tabela-itens">
+                    </tbody>
+            </table>
+            <button type="button" class="add-item-btn">Adicionar Novo Item</button>
+            <div class="totais-servico">
+                <h4>Custo da Visita: R$ <span class="total-visita">0.00</span></h4>
+                <h4>Preço Sugerido: R$ <span class="preco-sugerido">0.00</span></h4>
+            </div>
+        </div>
+
+        <div class="area-servico" data-servico="pressao">
+            <h3>Prevenção e Lesões por Pressão</h3>
+            <div class="servico-info">
+                <label for="duracao-pressao">Duração da Visita (minutos):</label>
+                <input type="number" id="duracao-pressao" value="45" min="15">
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Descrição</th>
+                        <th>Custo Unitário (R$)</th>
+                        <th>Quantidade</th>
+                        <th>Total</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody class="tabela-itens"></tbody>
+            </table>
+            <button type="button" class="add-item-btn">Adicionar Novo Item</button>
+            <div class="totais-servico">
+                <h4>Custo da Visita: R$ <span class="total-visita">0.00</span></h4>
+                <h4>Preço Sugerido: R$ <span class="preco-sugerido">0.00</span></h4>
+            </div>
+        </div>
+
+        <div class="area-servico" data-servico="pos-cirurgicos">
+            <h3>Cuidados Pós-cirúrgicos</h3>
+            <div class="servico-info">
+                <label for="duracao-pos-cirurgicos">Duração da Visita (minutos):</label>
+                <input type="number" id="duracao-pos-cirurgicos" value="30" min="15">
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Descrição</th>
+                        <th>Custo Unitário (R$)</th>
+                        <th>Quantidade</th>
+                        <th>Total</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody class="tabela-itens"></tbody>
+            </table>
+            <button type="button" class="add-item-btn">Adicionar Novo Item</button>
+            <div class="totais-servico">
+                <h4>Custo da Visita: R$ <span class="total-visita">0.00</span></h4>
+                <h4>Preço Sugerido: R$ <span class="preco-sugerido">0.00</span></h4>
+            </div>
+        </div>
+        
+        <div class="area-servico" data-servico="vasculares">
+            <h3>Tratamento de Feridas Vasculares</h3>
+            <div class="servico-info">
+                <label for="duracao-vasculares">Duração da Visita (minutos):</label>
+                <input type="number" id="duracao-vasculares" value="60" min="15">
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Descrição</th>
+                        <th>Custo Unitário (R$)</th>
+                        <th>Quantidade</th>
+                        <th>Total</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody class="tabela-itens"></tbody>
+            </table>
+            <button type="button" class="add-item-btn">Adicionar Novo Item</button>
+            <div class="totais-servico">
+                <h4>Custo da Visita: R$ <span class="total-visita">0.00</span></h4>
+                <h4>Preço Sugerido: R$ <span class="preco-sugerido">0.00</span></h4>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
