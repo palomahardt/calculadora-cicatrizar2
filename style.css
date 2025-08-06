@@ -1,0 +1,158 @@
+/* Estilos Gerais do Corpo da Página */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #fce4ec; /* Rosa bem claro */
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container Principal */
+.container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* Títulos */
+h1 {
+    color: #e91e63; /* Tom de rosa mais forte */
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #880e4f; /* Tom de vermelho escuro */
+    margin-top: 30px;
+    border-bottom: 2px solid #f48fb1;
+    padding-bottom: 8px;
+}
+
+p {
+    text-align: center;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Estilos para as áreas de serviço */
+.area-servico {
+    background-color: #fff8f9; /* Fundo levemente rosado para as seções */
+    border: 1px solid #f8bbd0;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+/* Área de Custos Fixos (Mão de Obra) */
+.custos-fixos {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.custos-fixos label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.custos-fixos input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #f48fb1;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Tabela de Itens */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+thead th {
+    background-color: #e91e63;
+    color: white;
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+}
+
+tbody td {
+    padding: 12px;
+    border-bottom: 1px solid #f8bbd0;
+    vertical-align: middle;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+table input[type="text"],
+table input[type="number"] {
+    width: 90%;
+    padding: 8px;
+    border: 1px solid #f8bbd0;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Botões */
+button {
+    background-color: #880e4f;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #6a0e3f;
+}
+
+.add-item-btn, .remover-btn {
+    background-color: #e91e63;
+    padding: 8px 12px;
+    font-size: 14px;
+}
+
+.add-item-btn:hover { background-color: #d81b60; }
+.remover-btn:hover { background-color: #c2185b; }
+
+.remove-btn {
+    background-color: #d32f2f;
+}
+
+.remove-btn:hover {
+    background-color: #b71c1c;
+}
+
+/* Área de Totais */
+.totais-servico {
+    text-align: right;
+    margin-top: 20px;
+    border-top: 1px dashed #e91e63;
+    padding-top: 10px;
+}
+
+.totais-servico h4 {
+    margin: 5px 0;
+    font-size: 1.1em;
+}
+
+.totais-servico span {
+    font-weight: bold;
+    color: #880e4f;
+}
